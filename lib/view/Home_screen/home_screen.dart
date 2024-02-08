@@ -27,8 +27,7 @@ class _HomePageState extends State<HomePage> {
   int filledBoxes = 0;
 
   static var myNewFont = GoogleFonts.pressStart2p(
-      textStyle:
-          TextStyle(color: Colors.black, letterSpacing: 3));
+      textStyle: TextStyle(color: Colors.black, letterSpacing: 3));
   static var myNewFontWhite = GoogleFonts.pressStart2p(
       textStyle:
           TextStyle(color: Colors.white, letterSpacing: 3, fontSize: 15));
@@ -49,11 +48,12 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Player X", style: myNewFontWhite),
+                      Text("Player O", style: myNewFontWhite),
                       SizedBox(
                         height: 20,
                       ),
-                      Text(ohScore.toString(), style: myNewFontWhite),
+                      Text(ohScore.toString(),
+                          style: myNewFontWhite.copyWith(fontSize: 25)),
                     ],
                   ),
                 ),
@@ -62,11 +62,12 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Player O", style: myNewFontWhite),
+                      Text("Player X", style: myNewFontWhite),
                       SizedBox(
                         height: 20,
                       ),
-                      Text(exScore.toString(), style: myNewFontWhite),
+                      Text(exScore.toString(),
+                          style: myNewFontWhite.copyWith(fontSize: 25)),
                     ],
                   ),
                 )
@@ -185,10 +186,15 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Draw"),
+          title: Text(
+            "Draw",
+            style: GoogleFonts.robotoSlab(textStyle: TextStyle(fontSize: 30)),
+          ),
           actions: [
             TextButton(
-              child: Text("Play again"),
+              child: Text("Play again",
+                  style:
+                      GoogleFonts.poppins(textStyle: TextStyle(fontSize: 20))),
               onPressed: () {
                 _clearBoard();
                 Navigator.of(context).pop();
@@ -206,10 +212,14 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Winner is:" + winner),
+          title: Text("Winner Is :  " + winner,
+              style:
+                  GoogleFonts.robotoSlab(textStyle: TextStyle(fontSize: 30))),
           actions: [
             TextButton(
-              child: Text("Play Again"),
+              child: Text("Play Again",
+                  style: GoogleFonts.robotoSlab(
+                      textStyle: TextStyle(fontSize: 25))),
               onPressed: () {
                 _clearBoard();
                 Navigator.of(context).pop();
