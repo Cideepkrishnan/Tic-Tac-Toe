@@ -1,16 +1,8 @@
 # tictactoe
 
 A new Flutter project.
+![Screenshot_1714576115](https://github.com/Cideepkrishnan/Tic-Tac-Toe/assets/145324710/72d34c23-e607-43de-bda3-88ed18d66c2a)
 
-## Getting Started
+![Screenshot_1714576120](https://github.com/Cideepkrishnan/Tic-Tac-Toe/assets/145324710/be63dac6-cf83-46d7-8901-ce2e87d3c936)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot_1714576131](https://github.com/Cideepkrishnan/Tic-Tac-Toe/assets/145324710/89abade0-e75a-4323-ad0d-5403bf8103d2)
